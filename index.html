@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthodox Saint Quote of the Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background-color: #f5f0e6;
+            color: #2d2926;
+        }
+        .icon-border {
+            background: linear-gradient(135deg, #d4af37 0%, #f2d272 50%, #d4af37 100%);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+        .quote-card {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            background-color: #f9f3e8; /* Warm beige */
+            position: relative;
+        }
+        .quote-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/png;base64,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");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+        .header-bg {
+            background-color: #2B5797; /* Royal blue */
+            background-image: linear-gradient(to right, #2B5797, #1E3A8A);
+            border-bottom: 3px solid #d4af37; /* Gold border */
+            position: relative;
+            z-index: 1;
+        }
+        .footer-bg {
+            background-color: #f0e6d2;
+            border-top: 1px solid #d4af37;
+            position: relative;
+            z-index: 1;
+        }
+        .cross {
+            color: #d4af37; /* Gold */
+            text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        }
+        .btn-primary {
+            background-color: #8C1515; /* Deep red */
+            border: 1px solid #6B0F0F;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #6B0F0F;
+            box-shadow: 0 0 10px rgba(140, 21, 21, 0.3);
+        }
+        .saint-icon {
+            background-color: #1C6758; /* Emerald green */
+            color: #d4af37;
+        }
+        .loader {
+            border-top-color: #8C1515;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .saint-name {
+            color: #8C1515; /* Deep red */
+        }
+        .quote-text {
+            color: #2d2926;
+            font-style: italic;
+        }
+        .gold-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d4af37, transparent);
+            margin: 1rem 0;
+        }
+        .quote-marks {
+            font-family: Georgia, serif;
+            font-size: 4rem;
+            line-height: 1;
+            color: rgba(212, 175, 55, 0.3);
+            height: 40px;
+        }
+        .quote-start {
+            align-self: flex-start;
+            margin-right: 0.5rem;
+            margin-bottom: -1rem;
+        }
+        .quote-end {
+            align-self: flex-end;
+            margin-left: 0.5rem;
+            margin-top: -1rem;
+        }
+        #quote-content {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="quote-card w-full max-w-md rounded-xl overflow-hidden">
+            <div class="header-bg text-white p-4">
+                <div class="flex items-center">
+                    <span class="cross text-2xl mr-2">☦</span>
+                    <h1 class="text-xl font-bold">Orthodox Saint Quote</h1>
+                </div>
+            </div>
+            
+            <div class="p-5" id="quote-content">
+                <div class="flex justify-center items-center py-10">
+                    <div class="loader w-12 h-12 border-4 border-gray-200 rounded-full"></div>
+                </div>
+            </div>
+            
+            <div class="footer-bg p-4 flex justify-between items-center">
+                <button id="prev-quote" class="px-4 py-2 btn-primary text-white rounded hover:bg-[#6b0000] transition">
+                    Previous
+                </button>
+                <span id="current-date" class="font-semibold"></span>
+                <button id="next-quote" class="px-4 py-2 btn-primary text-white rounded hover:bg-[#6b0000] transition">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Collection of Orthodox saint quotes - all from Eastern Orthodox saints
+        const quotesDatabase = [
+            {
+                quote: "Acquire the Spirit of Peace and thousands around you will be saved.",
+                saint: "St. Seraphim of Sarov"
+            },
+            {
+                quote: "The goal of human life is the acquisition of the Holy Spirit.",
+                saint: "St. Seraphim of Sarov"
+            },
+            {
+                quote: "Prayer is the test of everything; prayer is also the source of everything; prayer is the driving force of everything; prayer is also the director of everything. If prayer is right, everything is right.",
+                saint: "St. Theophan the Recluse"
+            },
+            {
+                quote: "Do not be surprised that you fall every day; do not give up, but stand your ground courageously. And assuredly the angel who guards you will honor your patience.",
+                saint: "St. John Climacus"
+            },
+            {
+                quote: "Remember that the Lord is in every Christian. When your neighbor comes to you, always have great respect for him, because the Lord is in him, and often expresses His will through him.",
+                saint: "St. John of Kronstadt"
+            },
+            {
+                quote: "The person who loves God values knowledge of God more than anything created by God, and pursues such knowledge ardently and ceaselessly.",
+                saint: "St. Maximus the Confessor"
+            },
+            {
+                quote: "Love sinners, but hate their deeds, and do not disdain sinners for their failings, so that you yourself do not fall into the temptation in which they abide.",
+                saint: "St. Isaac the Syrian"
+            },
+            {
+                quote: "Just as a pauper, seeing the royal treasures, all the more acknowledges his own poverty, so also the spirit, reading the accounts of the great deeds of the Holy Fathers, involuntarily is all the more humbled in its way of thought.",
+                saint: "St. John Climacus"
+            },
+            {
+                quote: "The soul that loves God has its rest in God and in God alone. In all the paths that men walk in the world, they do not attain peace until they draw near to hope in God.",
+                saint: "St. Isaac the Syrian"
+            },
+            {
+                quote: "Do not say that mere reading of the word of God can save you, for without humility, without an attentive reading of the word of God, without faith and without the grace of God, you cannot be saved.",
+                saint: "St. Tikhon of Zadonsk"
+            },
+            {
+                quote: "Those who have truly decided to serve the Lord God should practice the remembrance of God and uninterrupted prayer to Jesus Christ, mentally saying: Lord Jesus Christ, Son of God, have mercy on me, a sinner.",
+                saint: "St. Seraphim of Sarov"
+            },
+            {
+                quote: "Where there is pride, there is also resentment and the absence of love.",
+                saint: "St. Ambrose of Optina"
+            },
+            {
+                quote: "The beginning of the soul's corruption is unbelief. This is followed by: self-love, pride, hate, envy, avarice, anger, despondency, laziness, remembrance of wrongs, rancor, bitterness, despair, slander, lying, empty talk, ignorance, foolishness, blindness, sleep of soul and body, faint-heartedness, lethargy, feebleness, cowardice, audacity, insensitivity, flattery, hypocrisy, duplicity, self-justification, self-importance, boastfulness, infatuation, presumptuousness, vainglory, gluttony, over-eating, drunkenness, reviling, fault-finding, blasphemy, censure, frivolity, blindness of mind, daydreaming, absent-mindedness, drowsiness, despondency, a hard heart.",
+                saint: "St. Theophan the Recluse"
+            },
+            {
+                quote: "Everyone who has ever begun the struggle against sin, from the beginning of the world—has begun it with prayer and ended it with prayer.",
+                saint: "St. Ignatius Brianchaninov"
+            },
+            {
+                quote: "The way to perfection is through seeing one's own imperfections.",
+                saint: "St. Paisios of Mount Athos"
+            },
+            {
+                quote: "Humility is the only thing that no devil can imitate.",
+                saint: "St. John Climacus"
+            },
+            {
+                quote: "The saints were people like all of us. Many of them came out of great sins, but by repentance they attained the Kingdom of Heaven. And everyone who comes there comes through repentance, which the merciful Lord has given us through His sufferings.",
+                saint: "St. Silouan the Athonite"
+            },
+            {
+                quote: "A sign of spiritual life is the immersion of a person within himself and the hidden workings within his heart.",
+                saint: "St. Seraphim of Sarov"
+            },
+            {
+                quote: "The Lord sometimes allows people who are devoted to Him to fall into such dreadful vices; and this is in order to prevent them from falling into a still greater sin—pride. Your temptation will pass and you will spend the remaining days of your life in humility. Only do not forget your sin.",
+                saint: "St. Seraphim of Sarov"
+            },
+            {
+                quote: "When despondency seizes us, let us not give in to it. Rather, fortified and protected by the light of faith, let us with great courage say to the spirit of evil: 'What are you to us, you who cut off from God and take refuge in hell?'",
+                saint: "St. Basil the Great"
+            },
+            {
+                quote: "The more a person knows the glory of God, the more he lives in awe of Him.",
+                saint: "St. Silouan the Athonite"
+            },
+            {
+                quote: "If you want to overcome the spirit of slander, blame not the person who falls, but the demon who prompted him to sin.",
+                saint: "St. John Climacus"
+            },
+            {
+                quote: "The person who truly wishes to be healed is he who does not refuse treatment. This treatment consists of the pain and distress brought on by various misfortunes.",
+                saint: "St. Maximus the Confessor"
+            },
+            {
+                quote: "Conquer evil men by your gentle kindness, and make zealous men wonder at your goodness. Put the lover of justice to shame by your compassion.",
+                saint: "St. Isaac the Syrian"
+            },
+            {
+                quote: "The greatest wisdom is to seek God's will in everything, to see His hand in everything, and to submit to His will in all things.",
+                saint: "St. Peter of Damascus"
+            },
+            {
+                quote: "Enlighten my darkness, O Light that never fades.",
+                saint: "St. Symeon the New Theologian"
+            },
+            {
+                quote: "The humble person lives on earth as if in the Kingdom of Heaven—always happy, peaceful and satisfied with everything.",
+                saint: "St. Anthony of Optina"
+            },
+            {
+                quote: "The more we pray for someone, the more we love them.",
+                saint: "St. Porphyrios"
+            },
+            {
+                quote: "Prayer is the place of refuge for every worry, a foundation for cheerfulness, a source of constant happiness, a protection against sadness.",
+                saint: "St. John Chrysostom"
+            },
+            {
+                quote: "Do not be irritated either with those who sin or those who offend; do not have a passion for noticing every sin in your neighbor, and for judging him, as we are in the habit of doing. Everyone shall give an answer to God for himself.",
+                saint: "St. John of Kronstadt"
+            },
+            {
+                quote: "Repentance is the renewal of baptism. Repentance is a contract with God for a second life.",
+                saint: "St. John Climacus"
+            },
+            {
+                quote: "The person who has found love eats and drinks Christ every day and hour and so is made immortal.",
+                saint: "St. Isaac the Syrian"
+            },
+            {
+                quote: "Do not lose your temper with those who sin. Do not have a passion for noticing every sin in your neighbor and judging it, as we usually do. Everyone will give an answer for himself before God.",
+                saint: "St. Seraphim of Sarov"
+            },
+            {
+                quote: "The evil one cannot comprehend the joy we receive from the spiritual life; for this reason he is jealous of us, he envies us and sets traps for us, and we become grieved and fall.",
+                saint: "St. Paisios of Mount Athos"
+            }
+        ];
+
+        // Function to get quote by index
+        function getQuoteByIndex(index) {
+            // Ensure index is within bounds
+            const safeIndex = ((index % quotesDatabase.length) + quotesDatabase.length) % quotesDatabase.length;
+            return quotesDatabase[safeIndex];
+        }
+
+        // Function to display quote
+        function displayQuote(index) {
+            const quote = getQuoteByIndex(index);
+            const quoteContent = document.getElementById('quote-content');
+            const currentDateElement = document.getElementById('current-date');
+            
+            // Format date for display
+            const today = new Date();
+            const options = { month: 'long', day: 'numeric' };
+            currentDateElement.textContent = today.toLocaleDateString('en-US', options);
+            
+            // Create quote display
+            quoteContent.innerHTML = `
+                <div class="flex flex-col items-center mb-6">
+                    <div class="icon-border rounded-full p-1 mb-4">
+                        <div class="w-24 h-24 rounded-full saint-icon flex items-center justify-center">
+                            <span class="text-4xl">☦</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <span class="quote-marks quote-start">"</span>
+                    <div class="flex-1">
+                        <p class="text-xl leading-relaxed quote-text mb-4">${quote.quote}</p>
+                        <div class="gold-divider"></div>
+                        <p class="text-right saint-name font-semibold">— ${quote.saint}</p>
+                    </div>
+                    <span class="quote-marks quote-end">"</span>
+                </div>
+            `;
+        }
+
+        // Get today's date to determine which quote to show
+        const today = new Date();
+        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+        let currentQuoteIndex = dayOfYear % quotesDatabase.length;
+        
+        // Initialize with current quote
+        displayQuote(currentQuoteIndex);
+
+        // Set up navigation buttons
+        document.getElementById('prev-quote').addEventListener('click', () => {
+            currentQuoteIndex--;
+            displayQuote(currentQuoteIndex);
+        });
+
+        document.getElementById('next-quote').addEventListener('click', () => {
+            currentQuoteIndex++;
+            displayQuote(currentQuoteIndex);
+        });
+    </script>
+</body>
+</html>
